@@ -31,7 +31,9 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}",
-            "preLaunchTask": "static cef api library"
+            "preLaunchTask": "static cef api library",
+            "output": "${workspaceFolder}/Release",
+            "cwd": "${workspaceFolder}/Release"
         }
 
     ]
