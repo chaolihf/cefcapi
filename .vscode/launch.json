@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "编译和运行Main",
+            "name": "compile cef api",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\Release\\main_win.exe",
@@ -23,7 +23,16 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "生成main_win"
+            "preLaunchTask": "main_win"
+        },
+        {
+            "name": "Run Test",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}",
+            "preLaunchTask": "static cef api library"
         }
+
     ]
 }

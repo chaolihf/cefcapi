@@ -13,11 +13,17 @@
 
 #include "include/cef_version_win.h"
 
+#include "cefapi.h"
+
+int number_add_mod(int a, int b, int mod) {
+    return (a+b)%mod;
+}
+
 // Globals
 cef_life_span_handler_t g_life_span_handler = {};
 
 
-int main(int argc, char** argv) {
+int startCef(int argc, char** argv) {
     // This executable is called many times, because it
     // is also used for subprocesses. Let's print args
     // so we can differentiate between main process and
