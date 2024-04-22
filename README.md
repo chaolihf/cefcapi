@@ -27,6 +27,8 @@ Table of contents:
 
 
 ## Compatibility
+download url:
+https://cef-builds.spotifycdn.com/cef_binary_3.3202.1692.g18a939d_windows64.tar.bz2
 
 Tested configurations:
 - Windows:

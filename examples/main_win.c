@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
     window_info.window_name = cef_window_name;
 
     // Initial url
-    char url[] = "https://www.google.com/ncr";
+    char url[] = "http://baidu.com";
     cef_string_t cef_url = {};
     cef_string_utf8_to_utf16(url, strlen(url), &cef_url);
 

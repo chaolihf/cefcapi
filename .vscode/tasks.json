@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "生成main_win",
+            "command": "C:\\TDM-GCC-64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\examples\\main_win.c",
+                "-o",
+                "${workspaceFolder}\\Release\\main_win.exe",
+                "-L${workspaceFolder}\\Release",
+                "-lcef",
+                "-I${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
